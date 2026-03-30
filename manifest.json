@@ -3,6 +3,8 @@
   "name": "X History",
   "version": "1.0.0",
   "description": "Record your browsing history on X",
+  "author": "Jay Liu (https://github.com/LGCALIVE)",
+  "homepage_url": "https://github.com/LGCALIVE/x-history",
   "permissions": ["storage", "unlimitedStorage"],
   "action": {
     "default_popup": "popup.html",

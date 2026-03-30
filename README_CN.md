@@ -109,6 +109,10 @@ git clone https://github.com/LGCALIVE/x-timeline-history.git
 - Chrome Extension Manifest V3
 - 插件总体积约 50 KB
 
+## 作者
+
+由 **[Jay Liu](https://github.com/LGCALIVE)** 开发
+
 ## 开源协议
 
 [MIT](LICENSE)

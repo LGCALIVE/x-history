@@ -103,6 +103,10 @@ No `tabs`, `webRequest`, or other sensitive permissions required.
 - Zero external dependencies
 - Total size: ~50 KB
 
+## Author
+
+Created by **[Jay Liu](https://github.com/LGCALIVE)**
+
 ## License
 
 [MIT](LICENSE)
