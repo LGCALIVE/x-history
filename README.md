@@ -5,7 +5,9 @@
 A lightweight Chrome extension that automatically records tweets you read on X (Twitter). Never lose a tweet you've seen again.
 
 <p align="center">
-  <img src="screenshot.png" alt="X History Screenshot" width="380">
+  <img src="screenshot.png" alt="Compact View" width="300">
+  &nbsp;&nbsp;
+  <img src="screenshot-full.png" alt="Full View" width="300">
 </p>
 
 ## Features
