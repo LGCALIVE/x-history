@@ -4,6 +4,10 @@
 
 A lightweight Chrome extension that automatically records tweets you read on X (Twitter). Never lose a tweet you've seen again.
 
+<p align="center">
+  <img src="screenshot.png" alt="X History Screenshot" width="380">
+</p>
+
 ## Features
 
 - **Auto-record** — Click into any tweet and it's saved automatically

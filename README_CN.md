@@ -4,6 +4,10 @@
 
 一个轻量级 Chrome 浏览器插件，自动记录你在 X（Twitter）上阅读过的推文。再也不会丢失看过的内容。
 
+<p align="center">
+  <img src="screenshot.png" alt="X History 截图" width="380">
+</p>
+
 ## 功能特点
 
 - **自动记录** — 点进任何推文即自动保存，无需手动操作
