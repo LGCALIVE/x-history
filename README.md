@@ -1,8 +1,8 @@
 # X History
 
-A lightweight Chrome extension that automatically records tweets you read on X (Twitter). Never lose a tweet you've seen again.
+**English** | [中文](README_CN.md)
 
-[中文文档](README_CN.md)
+A lightweight Chrome extension that automatically records tweets you read on X (Twitter). Never lose a tweet you've seen again.
 
 ## Features
 

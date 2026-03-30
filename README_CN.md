@@ -1,8 +1,8 @@
 # X History
 
-一个轻量级 Chrome 浏览器插件，自动记录你在 X（Twitter）上阅读过的推文。再也不会丢失看过的内容。
+[English](README.md) | **中文**
 
-[English](README.md)
+一个轻量级 Chrome 浏览器插件，自动记录你在 X（Twitter）上阅读过的推文。再也不会丢失看过的内容。
 
 ## 功能特点
 
