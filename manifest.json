@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "X Timeline History",
+  "version": "1.0.0",
+  "description": "Record your browsing history on X",
+  "permissions": ["storage", "unlimitedStorage"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "icons/icon48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.x.com/*", "*://*.twitter.com/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  }
+}
