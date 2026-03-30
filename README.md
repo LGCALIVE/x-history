@@ -1,6 +1,8 @@
-# X Timeline History
+# X History
 
 A lightweight Chrome extension that automatically records tweets you read on X (Twitter). Never lose a tweet you've seen again.
+
+[中文文档](README_CN.md)
 
 ## Features
 
@@ -12,27 +14,65 @@ A lightweight Chrome extension that automatically records tweets you read on X (
 - **Clear cache** — One-click cleanup to free storage
 - **Privacy-first** — All data stored locally, zero network requests, no tracking
 
-## How It Works
-
-The extension injects a content script into X/Twitter pages. When you navigate to a tweet detail page (`x.com/user/status/123`), it extracts the main tweet's content from the DOM and saves it to `chrome.storage.local`. No API calls, no background servers, no data leaves your browser.
-
 ## Install
 
-### From source (Developer Mode)
+### Option 1: Download ZIP (Easiest)
 
-1. Clone this repository
-2. Open `chrome://extensions` in Chrome
-3. Enable **Developer mode** (top right toggle)
-4. Click **Load unpacked** and select the project folder
-5. Browse X as usual — tweets you click into are recorded automatically
+1. Click the green **Code** button at the top of this page
+2. Select **Download ZIP**
+3. Unzip the downloaded file
+4. Open Chrome and go to `chrome://extensions`
+5. Enable **Developer mode** (toggle in the top right corner)
+6. Click **Load unpacked**
+7. Select the unzipped `x-timeline-history-main` folder
+8. Done! You'll see the X History icon in your toolbar
+
+### Option 2: Git Clone
+
+```bash
+git clone https://github.com/LGCALIVE/x-timeline-history.git
+```
+
+Then follow steps 4-8 above.
 
 ## Usage
 
-1. Browse X normally
-2. Click into tweets you want to remember
-3. Click the extension icon to view your reading history
-4. Use the search bar to find specific tweets
-5. Click any saved tweet to open the original
+### Recording Tweets
+
+1. Browse X (twitter.com / x.com) as you normally do
+2. **Click into any tweet** to view its detail page
+3. The tweet is automatically saved — no buttons to press
+
+### Viewing History
+
+1. Click the **X History** icon in Chrome's toolbar
+2. Your reading history is displayed with the most recent at top
+3. Tweets are grouped by date (Today, Yesterday, etc.)
+
+### Searching
+
+Type in the search bar to filter by:
+- Tweet content
+- Author display name
+- @handle
+
+### View Modes
+
+Click the toggle button in the top right to switch between:
+- **Compact mode** — One line per tweet, scan quickly
+- **Full mode** — See complete tweet text and images
+
+### Opening Original Tweet
+
+Click any tweet in the list to open the original on X in a new tab.
+
+### Clearing Data
+
+Click **Clear** to delete all saved tweets and free storage space.
+
+## How It Works
+
+The extension runs a content script on X/Twitter pages. When you navigate to a tweet detail page (`x.com/user/status/123`), it reads the tweet content from the page DOM and saves it to `chrome.storage.local`. No API calls, no external servers, no data leaves your browser.
 
 ## Permissions
 
@@ -46,29 +86,16 @@ No `tabs`, `webRequest`, or other sensitive permissions required.
 
 ## Storage
 
-- Each tweet: ~1 KB (text only, images are loaded via URL on demand)
+- Each tweet: ~1 KB
 - 10,000 tweets: ~10 MB
 - Data never leaves your browser
 
 ## Tech Stack
 
-- Vanilla JavaScript (ES2020+)
-- Vanilla CSS
+- Vanilla JavaScript, Vanilla CSS
 - Chrome Extension Manifest V3
-- `chrome.storage.local`
 - Zero external dependencies
-
-## Project Structure
-
-```
-x-timeline-history/
-├── manifest.json     # Extension config (MV3)
-├── content.js        # DOM scraper, runs on x.com
-├── popup.html        # Popup markup
-├── popup.js          # Popup logic (search, render, view toggle)
-├── popup.css         # Popup styles (light theme)
-└── icons/            # Extension icons (16/48/128px)
-```
+- Total size: ~50 KB
 
 ## License
 

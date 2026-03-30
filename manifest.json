@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "X Timeline History",
+  "name": "X History",
   "version": "1.0.0",
   "description": "Record your browsing history on X",
   "permissions": ["storage", "unlimitedStorage"],

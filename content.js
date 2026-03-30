@@ -121,7 +121,7 @@
 
       chrome.storage.local.set({ tweets: trimmed }, () => {
         writing = false;
-        console.log('[X Timeline History] recorded: @' + tweet.authorHandle + (tweet.avatarUrl ? ' (with avatar)' : ' (no avatar)'));
+        console.log('[X History] recorded: @' + tweet.authorHandle + (tweet.avatarUrl ? ' (with avatar)' : ' (no avatar)'));
       });
     });
   }
@@ -198,5 +198,5 @@
   lastUrl = location.href;
   tryCapture();
 
-  console.log('[X Timeline History] content.js loaded — recording tweets you visit');
+  console.log('[X History] content.js loaded — recording tweets you visit');
 })();
